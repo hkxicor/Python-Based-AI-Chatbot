@@ -1,0 +1,16 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>XICOR</pattern>
+        <template>
+            Yes Sir , What can i do for you!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GIVE ME INFORMATION ABOUT *</pattern>
+        <template>
+            @COMMAND-GSEARCH-<set name="search_command"><star/></set>
+        </template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,71 @@
+<aiml version="1.0.1" encoding="UTF-8">
+	<category>
+		<pattern>HELLO</pattern>
+		<template>
+			Well,hello!
+		</template>
+	</category>
+	
+	<category>
+		<pattern>GIVE ME INFORMATION ABOUT  *</pattern>
+		<template>
+			@COMMAND-GSEARCH-TAJMAHAL
+		</template>
+	</category>
+	<category>
+		<pattern>TIME</pattern>
+		<template>@COMMAND-CURTIME</template>
+	</category>
+	<category>
+		<pattern>OPEN FACEBOOK</pattern>
+		<template>@COMMAND-FBOPENX</template>
+	</category>
+	<category>
+		<pattern>OK</pattern>
+		<template>
+			Alright sir ... What else i can do for you.
+		</template>
+	</category>
+
+
+
+<category>
+		<pattern>WHAT IS YOUR NAME</pattern>
+		<template>my name is khan and i am not a terrorist
+		</template>
+	</category>
+	<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>
+			I am a bot , silly!
+		</template>
+	</category>
+	<category>
+		<pattern>WHAT IS YOUR AGE</pattern>
+		<template>
+			i an 1 day old
+		</template>
+	</category>
+	<category>
+      <pattern>MY DOG NAME IS *</pattern>
+      <template>
+         That is interesting that you have a dog named <set name="dog"><star/></set>
+      </template>  
+   </category>  
+   <category>
+      <pattern>WHAT IS MY DOG NAME</pattern>
+      <template>
+         Your dog name is <get name="dog"/>.
+      </template>  
+   </category>
+	<category>
+		<pattern>ONE TIME I *</pattern>
+		<template>
+			<random>
+				<li>Go on.</li>
+				<li>How old you are?</li>
+				<li>are you telling the truth</li>
+			</random>
+		</template>
+	</category>
+</aiml>
